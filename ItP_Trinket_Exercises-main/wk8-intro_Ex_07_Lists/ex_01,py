@@ -1,0 +1,8 @@
+# Write a program that creates a list of even numbers from 24 to 42. Prints out that list all-at-once then one-at-a-time (but all on the same line). See the output below:
+#       [24, 26, 28, 30, 32, 34, 36, 38, 40, 42]
+#       24 26 28 30 32 34 36 38 40 42
+
+even_n = range(24,43,2)
+print(even_n)
+for number in even_n:
+    print(number, end=' ')

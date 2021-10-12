@@ -1,0 +1,19 @@
+# Write a function that removes all the vowels from a given a string and show the result string
+
+words = "banana bread"
+vowels = "aeiou"
+
+for v in words:
+    if v in vowels:
+        words = words.replace(v, "")
+print(words)
+
+# Checked solution on trinket
+def no_vowels(s):
+    vowels = "aeiouAEIOU"
+    no_v = ""
+    for char in s:
+        if char not in vowels:
+            no_v = no_v + char
+    return no_v
+print(no_vowels("hellow wourldadaouawewpiuac apoiuv"))
